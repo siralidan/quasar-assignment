@@ -59,7 +59,7 @@
                 <div
                   v-for="item in submenu"
                   :key="item.name"
-                  class="group relative flex items-center gap-x-4 px-2 rounded-lg text-xs font-bold leading-6 hover:bg-yellow-600"
+                  class="group relative flex items-center gap-x-4 px-2 rounded-lg text-xs font-bold leading-6 hover:bg-blue-200"
                 >
                   <div class="flex-auto">
                     <NuxtLink

@@ -1,14 +1,20 @@
 <template>
-  <div class="bg-blue-400 relative isolate px-6 pt-32 pb-32 lg:px-8">
+  <div
+    class="relative isolate px-6 pt-32 pb-32 lg:px-8 bg-gradient-to-r from-blue-300 via-green-300 via-blue-00 to-blue-300"
+  >
     <div class="flex flex-col lg:flex-row items-center justify-center px-8">
       <div class="w-full lg:w-1/2 flex flex-col">
         <div
-          class="w-40 sm:flex sm:justify-left mb-8 animate__animated animate__fadeIn animate__delay-3s"
+          class="w-40 sm:flex sm:justify-left mb-8 animate__animated animate__fadeIn animate__delay-1s"
         >
           <div
-            class="relative rounded-lg px-3 py-1 text-xs leading-6 bg-white text-blue-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+            class="relative rounded-lg px-3 py-1 text-xs leading-6 bg-blue-400 sm:bg-white text-white sm:text-blue-600"
           >
             풀타임, 파트타임
+            <span
+              class="absolute mt-5 text-blue-400 sm:text-white items-start left-2 text-white"
+              >&#9660;</span
+            >
           </div>
         </div>
 
@@ -27,22 +33,16 @@
           <div
             class="mt-4 animate__animated animate__fadeInUp animate__duration-0.5s"
           >
-            <h1
-              class="text-3xl font-bold tracking-tight text-white sm:text-2xl"
-            >
+            <h1 class="text-lg font-bold tracking-tight text-white sm:text-2xl">
               법률 및 인사관리 부담없이
             </h1>
-            <h1
-              class="text-3xl font-bold tracking-tight text-white sm:text-2xl"
-            >
+            <h1 class="text-lg font-bold tracking-tight text-white sm:text-2xl">
               1주일 이내에 원격으로 채용해보세요.
             </h1>
           </div>
 
-          <div class="mt-6">
-            <h1
-              class="text-3xl underline tracking-tight text-white sm:text-2xl"
-            >
+          <div class="hidden sm:block mt-6">
+            <h1 class="text-lg underline tracking-tight text-white sm:text-lg">
               개발자가 필요하신가요?
             </h1>
           </div>
@@ -91,28 +91,34 @@
           </div>
         </div>
       </div>
-      <div class="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
+      <div
+        class="lg:w-1/2 flex flex-col justify-center items-center mt-8 lg:mt-0"
+      >
+        <div class="flex flex-col justify-center items-center h-full ml-14 sm:ml-18">
+          <div class="bg-white rounded-lg px-4 py-1 flex items-center">
+            <img class="w-5 h-5 rounded-full shadow-lg" src="/currency.png" />
+            <p class="font-bold text-green-400 ml-2">월 100만원</p>
+          </div>
+          <span class="absolute mt-10 text-white">&#9660;</span>
+        </div>
+
         <div class="w-full flex justify-center items-center">
           <img
             class="w-4 h-4 mb-3 rounded-full shadow-lg"
             src="/caret-left.png"
-            alt="Profile image"
           />
-          <div
-            class="hidden sm:block top-0 left-0 transform translate-x-16 translate-y-6 z-0"
-          >
-            <div class="max-w-sm p-2 bg-white rounded-lg shadow dark:bg-white">
+          <div class="top-0 left-0 transform translate-x-16 translate-y-6 z-0">
+            <div class="px-4 sm:px-2 bg-white rounded-lg shadow dark:bg-white">
               <div class="flex flex-col items-center pb-8 pt-8">
                 <img
                   class="w-24 h-24 mb-3 rounded-full shadow-lg"
                   src="/ellipse-2.png"
-                  alt="Profile image"
                 />
-                <h5 class="mb-1 text-lg font-bold text-gray-900">
+                <h5 class="mb-1 text-lg font-bold text-gray-900 text-center">
                   Abhishek Gupta
                 </h5>
-                <span class="text-sm text-gray-500 text-blue-600">
-                  마케팅 · 2y+
+                <span class="text-sm text-blue-600">
+                  마케팅 <span class="font-bold">· 2y+</span>
                 </span>
                 <div class="flex flex-col mt-4 md:mt-6 items-center gap-y-1">
                   <a
@@ -142,21 +148,20 @@
             </div>
           </div>
 
-          <div class="top-0 left-0 transform translate-x-4 translate-y-4 z-10">
+          <div class="top-0 left-0 transform translate-x-10 translate-y-4 z-10">
             <div
-              class="px-2 py-4 max-w-sm bg-white rounded-lg shadow dark:bg-white"
+              class="px-4 sm:px-2 max-w-sm bg-white rounded-lg shadow dark:bg-white"
             >
               <div class="flex flex-col items-center pb-10 pt-10">
                 <img
                   class="w-24 h-24 mb-3 rounded-full shadow-lg"
                   src="/ellipse-2.png"
-                  alt="Profile image"
                 />
-                <h5 class="mb-1 text-lg font-bold text-gray-900">
+                <h5 class="mb-1 text-lg font-bold text-gray-900 text-center">
                   Abhishek Gupta
                 </h5>
-                <span class="text-sm text-gray-500 text-blue-600">
-                  마케팅 · 2y+
+                <span class="text-sm text-blue-600">
+                  마케팅 <span class="font-bold">· 2y+</span>
                 </span>
                 <div class="flex flex-col mt-4 md:mt-6 items-center gap-y-1">
                   <a
@@ -187,20 +192,21 @@
           </div>
 
           <div
-            class="hidden sm:block top-0 left-0 transform translate-x-[-16px] translate-y-6 z-0"
+            class="top-0 left-0 transform translate-x-[-10px] translate-y-6 z-0"
           >
-            <div class="p-2 max-w-sm bg-white rounded-lg shadow dark:bg-white">
+            <div
+              class="px-4 sm:px-2 max-w-sm bg-white rounded-lg shadow dark:bg-white"
+            >
               <div class="flex flex-col items-center pb-8 pt-8">
                 <img
                   class="w-24 h-24 mb-3 rounded-full shadow-lg"
                   src="/ellipse-2.png"
-                  alt="Profile image"
                 />
-                <h5 class="mb-1 text-xl font-bold text-gray-900">
+                <h5 class="mb-1 text-lg font-bold text-gray-900 text-center">
                   Abhishek Gupta
                 </h5>
-                <span class="text-sm text-gray-500 text-blue-600">
-                  마케팅 · 2y+
+                <span class="text-sm text-blue-600">
+                  마케팅 <span class="font-bold">· 2y+</span>
                 </span>
                 <div class="flex flex-col mt-4 md:mt-6 items-center gap-y-1">
                   <a
@@ -230,60 +236,68 @@
             </div>
           </div>
           <img
-            class="w-4 h-4 mb-3 mr-4 rounded-full shadow-lg"
+            class="w-4 h-4 mb-3 ml-6 rounded-full shadow-lg"
             src="/caret-right.png"
-            alt="Profile image"
           />
+        </div>
+
+        <div class="pt-8 py-2 lg:hidden justify-left items-left">
+          <div class="flex">
+            <div class="rounded-lg px-2 py-1 flex">
+              <img
+                class="w-5 h-5 rounded-full shadow-lg"
+                src="/icon-check.png"
+              />
+              <p class="font-bold text-white ml-2">한국어 능력</p>
+            </div>
+
+            <div class="rounded-lg px-4 py-1 flex">
+              <img
+                class="w-5 h-5 rounded-full shadow-lg"
+                src="/icon-check.png"
+              />
+              <p class="font-bold text-white ml-2">업무 수행 능력</p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="rounded-lg px-2 py-1 flex">
+              <img
+                class="w-5 h-5 rounded-full shadow-lg"
+                src="/icon-check.png"
+              />
+              <p class="font-bold text-white ml-2">겸업 여부</p>
+            </div>
+
+            <div class="rounded-lg px-4 py-1 flex">
+              <img
+                class="w-5 h-5 rounded-full shadow-lg"
+                src="/icon-check.png"
+              />
+              <p class="font-bold text-white ml-2">평판 조회</p>
+            </div>
+          </div>
+          <h1
+            class="text-xl font-bold mt-4 tracking-tight text-yellow-300 underline sm:text-lg"
+          >
+            외국인 인재를 찾고 계신가요?
+          </h1>
         </div>
       </div>
     </div>
 
     <div class="hidden sm:flex items-center px-8 w-full gap-x-6 py-12">
       <div
-        class="bg-gray-200 bg-opacity-50 rounded-lg px-2 w-full animate__animated animate__slideInLeft animate__delay-0.5s"
+        v-for="(delay, index) in delays"
+        :key="index"
+        :style="{ animationDelay: delay }"
+        class="bg-gray-200 bg-opacity-50 rounded-lg px-2 w-full animate__animated animate__slideInLeft"
       >
         <div class="flex items-center p-2">
           <div class="px-2 py-1 bg-gray-200 bg-opacity-50 rounded-lg">
-            <img src="/icon-marketing.png" class="w-5 h-5" />
+            <img :src="icons[index]" class="w-5 h-5" />
           </div>
           <div class="ml-2">
-            <p class="text-md text-white">해외 마케팅</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="bg-gray-200 bg-opacity-50 rounded-lg px-2 w-full animate__animated animate__slideInLeft animate__delay-1s"
-      >
-        <div class="flex items-center p-2">
-          <div class="px-2 py-1 bg-gray-200 bg-opacity-50 rounded-lg">
-            <img src="/icon-image.png" class="w-5 h-5" />
-          </div>
-          <div class="ml-2">
-            <p class="text-md text-white">퍼블리셔</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="bg-gray-200 bg-opacity-50 rounded-lg px-2 w-full animate__animated animate__slideInLeft animate__delay-1.5s"
-      >
-        <div class="flex items-center p-2">
-          <div class="px-2 py-1 bg-gray-200 bg-opacity-50 rounded-lg">
-            <img src="/icon-box.png" class="w-5 h-5" />
-          </div>
-          <div class="ml-2">
-            <p class="text-md text-white">캐드원(제도사)</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="bg-gray-200 bg-opacity-50 rounded-lg px-2 w-full animate__animated animate__slideInLeft animate__delay-2s"
-      >
-        <div class="flex items-center p-2">
-          <div class="px-2 py-1 bg-gray-200 bg-opacity-50 rounded-lg">
-            <img src="/icon-vector.png" class="w-5 h-5" />
-          </div>
-          <div class="ml-2">
-            <p class="text-md text-white">해외 세일즈</p>
+            <p class="text-md text-white">{{ titles[index] }}</p>
           </div>
         </div>
       </div>
@@ -292,13 +306,35 @@
 </template>
 <script setup>
 useHead({
-  title: "Home - Hypeware",
+  title: "Home - Hyperhire",
+});
+
+import { ref } from "vue";
+
+const delays = ref(["0.5s", "1s", "1.5s", "2s"]);
+const titles = ref(["해외 마케팅", "퍼블리셔", "캐드원(제도사)", "해외 세일즈"]);
+const icons = ref([
+  "/icon-marketing.png",
+  "/icon-image.png",
+  "/icon-box.png",
+  "/icon-vector.png",
+]);
+
+onMounted(() => {
+  setInterval(() => {
+    const lastIndex = delays.value.length - 1;
+    const lastDelay = delays.value[lastIndex];
+    delays.value = delays.value.map((delay, index) =>
+      index === lastIndex ? "0.5s" : delays.value[index + 1]
+    );
+    delays.value[lastIndex] = lastDelay;
+  }, 5000);
 });
 </script>
 
 <style scoped>
 .bg-image {
-  background-image: url("");
+  background-image: url("/hero-1.png");
   background-size: cover;
   background-position: center;
 }
